@@ -14,7 +14,13 @@ const FERFIAK=emberekLISTA.filter(function(ember){
 });
 const FERFIAK2=emberekLISTA.filter((ember)=>{
     
-    return ember.nem===false;
+    return ember.kor<10;
 
 
 });
+emberekLISTA.sort(function(e1,e2){
+    return e2.kor-e1.kor
+
+
+})
+console.log(emberekLISTA)
